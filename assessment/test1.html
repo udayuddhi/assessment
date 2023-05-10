@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TestExam</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="object.json">
+
+    <style>
+        .card-title {
+            padding: 12px;
+            text-align: left;
+            background: #ddd;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .card {
+            border: 1px solid #000;
+            padding: 0px;
+            border-radius: 20px
+        }
+
+        .btn-section {
+            float: right;
+        }
+    </style>
+
+</head>
+
+<body>
+    <br>
+    <div class="container card">
+        <div class="card-title" id="card-title">Section Title</div>
+        <div class="card-body">
+            <div id="fistContent">
+                <h5 class="text-center p-3 m-3" id="title">Take a test to asses your content development skills</h5>
+                <center><button class="btn-lg btn-success border-0" onclick="startTest();" value="0" id="readybtn">I'm
+                        Ready</button></center>
+            </div>
+
+            <div id="rslt">
+                <h5 class="text-center p-3 m-3">Thanks you for Taking up assesment</h5>
+                <center>
+                    <h4><b>Your Score is : <span class="text-success" id="rslt_nums"> 30</span></h4></b>
+                    <h5 class="text-success"><b>Feedback : </b><span id="feed_msg"></span></h5>
+                </center>
+            </div>
+
+            <div id="questins">
+                <h4 id="qns_sec" class="btn-section">1 out of 8</h4>
+                <h5 class="text-left p-4 m-4" id="qn_text">Test Question</h5>
+                <ul class="">
+
+                    <li class="form-control p-3 p-3">
+                        <input type="radio" name="option" id="option_1" value="">
+                        <span id="option_1_txt">option_1</span>
+                    </li>
+                    <li class="form-control p-3">
+                        <input type="radio" name="option" id="option_2" value="">
+                        <span id="option_2_txt">option_2</span>
+                    </li>
+                    <li class="form-control p-3">
+                        <input type="radio" name="option" id="option_3" value="">
+                        <span id="option_3_txt">option_3</span>
+                    </li>
+                    <li class="form-control p-3">
+                        <input type="radio" name="option" id="option_4" value="">
+                        <span id="option_4_txt">option_4</span>
+                    </li>
+
+                </ul>
+
+                <div class="btn-section">
+                    <button class="btn-grey btn" onclick="click_prev();" id="prev_btn" value="0">Previous
+                        Question</button>
+                    <button class="btn-success btn" id="nxt_btn" onclick="click_nxt();" value="1">Next Question</button>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+   
+      
+      <script src="./script.js"></script>
+
+</body>
+
+</html>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
